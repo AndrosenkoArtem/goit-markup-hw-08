@@ -1,37 +1,72 @@
 
-// .feather-list {
-//     display: flex;
-//     padding-top: 94px;
-//     padding-bottom: 94px;
-//     margin: 0;
-//     justify-content: center;
-// }
-// .feather-list .feather-item:not(:first-child) {
-//     margin-left: 30px;
-// }
-// .feather-item {
-//     justify-content: center;
-//     width: 270px;
-// }
-// .feather-item__title {
-//     color: $primary-text-color;
-//     font-family: Roboto;
-//     font-size: 14px;
-//     line-height: 1.4;
-//     letter-spacing: 0.03em;
-// }
-// .feather-item__background {
-//     background-color: $white-text;
-//     width: 270px;
-//     height: 120px;
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-// }
-// .feather-item__subtitle {
-//     font-size: 14px;
-//     line-height: 1.7;
-//     letter-spacing: 0.03em;
-//     margin: 0;
-//     padding: 0;
-// }
+.feather-list {
+    @media screen and (max-width: 768px) {
+        display: block;
+        padding: 60px 0px;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1200px){
+        flex-wrap: wrap;
+        padding: 60px 0px;
+    }
+    padding-top: 94px;
+    padding-bottom: 94px;
+    display: flex;
+    margin: 0;
+    justify-content: center;
+}
+
+.feather-item {
+        @media screen and (min-width: 768px) and (max-width: 1200px){
+        width: 354px;
+        }
+        justify-content: center;
+        width: 100%;
+    .feather-list &:not(:first-child) {
+        @media screen and (max-width: 768px) {
+            margin-left: 0px;
+            margin-top: 30px;
+        }
+        @media screen and (min-width: 768px) and (max-width: 1200px){
+            margin: 0;
+        }
+            margin-left: 30px;
+    }
+    .feather-list &:nth-child(2n) {
+        @media screen and (min-width: 768px) and (max-width: 1200px){
+            margin-left: 30px;
+        }
+    }
+    .feather-list &:nth-child(-n+2) {
+        @media screen and (min-width: 768px) and (max-width: 1200px){
+            margin-bottom: 30px;
+        }
+    }
+}
+.feather-item__title {
+    color: $primary-text-color;
+    font-family: Roboto;
+    font-size: 14px;
+    line-height: 1.4;
+    letter-spacing: 0.03em;
+}
+.feather-item__background {
+    @media screen and (max-width: 768px) {
+        width: 100%;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1200px){
+        width: 354px;
+    }
+    background-color: $white-text;
+    width: 270px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.feather-item__subtitle {
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    margin: 0;
+    padding: 0;
+}

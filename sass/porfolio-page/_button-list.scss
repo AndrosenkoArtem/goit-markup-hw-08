@@ -1,14 +1,41 @@
      .background-color {
+        @media screen and (max-width: 768px) {
+            width: 100%;
+            padding-top: 60px;
+        }
+        @media screen and (min-width: 768px) and (max-width: 1200px){
+            width: 768px;
+            padding-top: 60px;
+        }
+        @media screen and (min-widht: 1200px) {
+            width:1200px;
+        }
          padding-top: 93px;
          width: 1170px;
      }
 
      .filter {
+        @media screen and (max-width: 768px) {
+            flex-wrap: wrap;
+        }
+        @media screen and (min-width: 768px) and (max-width: 1200px){
+            width: 768px;
+        }
          display: flex;
          justify-content: center;
-             li {
-                 margin-right: 8px;
-                }
+        li:nth-child(2n) {
+            @media screen and (min-width: 282px) and (max-width: 385px){
+                margin-bottom: 15px;
+            }
+        }
+        li:nth-child(3n) {
+            @media screen and (max-width: 768px) {
+                margin-bottom: 15px;
+            }
+        }
+        li {
+            margin-right: 8px;
+        }
      }
      .marketing {
          margin: 0;

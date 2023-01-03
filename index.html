@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Web studio</title>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
     <link
@@ -14,36 +14,46 @@
     <link rel="stylesheet" href="./css/main.css">
     <header class="background-header">
         <div class="container header-container">
-                    <a class="header__logo" href="https://www.meme-arsenal.com/memes/feaff98f2c4a4679c9ccecb33b327ff6.jpg"> 
-                        <span class="header__logotipe">Web</span> studio</a> 
-                <nav>
-                    <ul class="site-nav">
-                        <li class="site-nav__line">
-                            <a href="" class="link current link__padding" >Studio</a>
-                        </li>
-                        <li >
-                            <a href="./Portfolio.html" class="link link__padding" >Portfolio</a>
-                        </li>
-                        <li >
-                            <a href="#contacts" class="link link__padding" >Contacts</a>
-                        </li>
-                    </ul>
+            <a class="header__logo" href="https://www.meme-arsenal.com/memes/feaff98f2c4a4679c9ccecb33b327ff6.jpg"> 
+                <span class="header__logotipe">Web</span> studio</a> 
+                <div class="drop-menu">
+                    <button type="button" class="modal-nav "data-menu-button>
+                        <svg class="modal-nav__menu">
+                            <use href="./images/sprite.svg#icon-cross" class="modal-nav__close"></use>
+                            <use href="./images/sprite.svg#icon-menu"  class="modal-nav__icon"></use>
+                        </svg>
+                    </button>
+                <div class="menu-container" data-menu>
+                    <nav>
+                        <ul class="site-nav">
+                            <li class="site-nav__line">
+                                <a href="" class="link current " >Studio</a>
+                            </li>
+                            <li class="site-nav__item">
+                                <a href="./Portfolio.html" class="link" >Portfolio</a>
+                            </li>
+                            <li class="site-nav__item">
+                                <a href="#contacts" class="link" >Contacts</a>
+                            </li>
+                        </ul>
                 </nav>
-                    <ul class="mail-list">
-                        <li>
-                            <a class="mail-hover" href="mailto:info@devstudio.com">
-                                    <svg class="mail" width="16px" height="11px">
-                                    <use href="./images/sprite.svg#icon-mail"></use>
-                                    </svg>   
-                            info@devstudio.com</a>
-                        </li>
-                        <li><a class="tel-hover" href="tel:+380961111111">
-                            <svg class="telephone" width="10" height="15">
-                                <use href="./images/sprite.svg#icon-telephone"></use>
-                            </svg>
-                            +38 096 111 11 11</a>
-                        </li>
-                    </ul>
+                <ul class="mail-list">
+                    <li>
+                        <a class="mail-hover" href="mailto:info@devstudio.com">
+                                <svg class="mail" width="16px" height="11px">
+                                <use href="./images/sprite.svg#icon-mail"></use>
+                                </svg>   
+                        info@devstudio.com</a>
+                    </li>
+                    <li><a class="tel-hover" href="tel:+380961111111">
+                        <svg class="telephone" width="10" height="15">
+                            <use href="./images/sprite.svg#icon-telephone"></use>
+                        </svg>
+                        +38 096 111 11 11</a>
+                    </li>
+                </ul>
+                </div>
+            </div>
         </div>
      </header>
         <main>
@@ -455,5 +465,6 @@
             </div>
         </div>
         <script src="./modal.js"></script>
+        <script src="./mobile-menu.js"></script>
 </body>
 </html> 

@@ -14,45 +14,48 @@
     <link rel="stylesheet" href="./css/main.css">
     <header class="background-header">
         <div class="container header-container">
-            <div class="logo-focus">
-                <a class="header__logo" href="/"> 
-                    <span class="header__logotipe">Web</span> studio</a> 
-                </div>
-                <nav>
-                    <ul class="site-nav">
-                        <li >
-                            <a href="./index.html" class="link link__padding" >Studio</a>
-                        </li>
-                        <li class="site-nav__line">
-                            <a href="" class="link current link__padding" >Portfolio</a>
-                            <div class="current-line-porfolio"></div>
-                        </li>
-                        <li >
-                            <a href="#contacts" class="link link__padding" >Contacts</a>
-                        </li>
-                    </ul>
+            <a class="header__logo" href="https://www.meme-arsenal.com/memes/feaff98f2c4a4679c9ccecb33b327ff6.jpg"> 
+                <span class="header__logotipe">Web</span> studio</a> 
+                <div class="drop-menu">
+                    <button type="button" class="modal-nav "data-menu-button>
+                        <svg class="modal-nav__menu">
+                            <use href="./images/sprite.svg#icon-cross" class="modal-nav__close"></use>
+                            <use href="./images/sprite.svg#icon-menu"  class="modal-nav__icon"></use>
+                        </svg>
+                    </button>
+                <div class="menu-container" data-menu>
+                    <nav>
+                        <ul class="site-nav">
+                            <li class="site-nav__line">
+                                <a href="./index.html" class="link " >Studio</a>
+                            </li>
+                            <li class="site-nav__item site-nav__line">
+                                <a href="" class="link current site-nav__padding" >Portfolio</a>
+                            </li>
+                            <li class="site-nav__item">
+                                <a href="#contacts" class="link" >Contacts</a>
+                            </li>
+                        </ul>
                 </nav>
                 <ul class="mail-list">
-                    <li class="items">
-                    </li>
-                    <li class="item ">
+                    <li>
                         <a class="mail-hover" href="mailto:info@devstudio.com">
                                 <svg class="mail" width="16px" height="11px">
                                 <use href="./images/sprite.svg#icon-mail"></use>
                                 </svg>   
                         info@devstudio.com</a>
                     </li>
-                    <li class="items tel-icon">
-                    </li>
-                    <li class="item "><a class="tel-hover" href="tel:+380961111111">
+                    <li><a class="tel-hover" href="tel:+380961111111">
                         <svg class="telephone" width="10" height="15">
                             <use href="./images/sprite.svg#icon-telephone"></use>
                         </svg>
                         +38 096 111 11 11</a>
                     </li>
                 </ul>
+                </div>
+            </div>
         </div>
-         </header>
+     </header>
 
             <main>
                 <div class="container">
@@ -89,7 +92,7 @@
                                         <p class="market__info">Technocracker is a modern platform for the spread of coronavirus. Companies use this platform for digital espionage and attacks on competitors' secure servers.</p>
                                     </div>
                                    <div class="market__item">
-                                    <h3 class="market__title">New Orlean vs Golden Star poster</h3>
+                                    <h3 class="market__title">New Orlean vs Golden Star</h3>
                                     <p class="market__subtitle">Design</p>
                                     
                                     </div>
@@ -245,6 +248,7 @@
                     </div>   
                 </div> 
             </footer>
-        </div>    
+        </div>  
+        <script src="./mobile-menu.js"></script>  
 </body>
 </html> 

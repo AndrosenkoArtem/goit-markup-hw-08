@@ -14,13 +14,15 @@
         color: $title-text-color;
         background-color: $background-color;
         font-family: Roboto, sans-serif;
-        padding-top: 82.20px;
+        padding-top: 80.19px;
     }
     button {
         cursor: pointer;
         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
     img {
+        // object-fit: cover;
+        // object-position: top;
         display: block;
         max-width: 100%;
         height: auto;
@@ -35,7 +37,16 @@
         margin-bottom: 0;
     }
     .container {
-        width: 1200px;
+        @media screen and (min-width: 480px) {
+            width: 480px;
+        }
+        @media screen and (min-width: 768px) {
+            width: 768px;
+        }
+        @media screen and (min-width: 1200px) {
+            width: 1200px;
+        }
+
         margin-left: auto;
         margin-right: auto;
         padding-left: 15px;
