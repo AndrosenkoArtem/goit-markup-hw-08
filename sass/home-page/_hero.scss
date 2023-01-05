@@ -1,41 +1,90 @@
         .hero {
-                @media screen and (max-width: 768px) { 
+                @media screen and (max-width: 767px) { 
                         margin-left: auto;
                         margin-right: auto; 
                     }
-                @media screen and (min-width: 768px) and (max-width: 1200px){
+                @media screen and (min-width: 768px) and (max-width: 1199px){
                         margin-left: auto;
                         margin-right: auto; 
                     }
-
         }
-
         .hero__background {
-        @media screen and (max-width: 767px) {
-        }
-        @media screen and (min-width: 768px) and (max-width: 1200px){
-        }
-        @media screen and (min-widht: 1200px) {
-                min-width: 1200px;
-        }
             text-align: center;
-            padding-top: 200px;
-            padding-bottom: 200px;
-
             max-height: 100%;
             margin-left: auto;
             margin-right: auto;
-            background-image: linear-gradient(0deg,
-                    rgba(47, 48, 58, 0.8),
-                    rgba(47, 48, 58, 0.8)),
-                url('../images/hero-background.jpg');
             background-repeat: no-repeat;
-            background-position: center;
+            background-size: cover;
+            @media screen and (min-width: 50px) {
+                padding-top: 118px;
+                padding-bottom: 200px;
+                height: 400px;
+            
+                background-image: linear-gradient(0deg,
+                rgba(47, 48, 58, 0.8),
+                rgba(47, 48, 58, 0.8)),
+                url('../images/hero-background-mobile.jpg');
+                background-position: center;
+
+                @media screen and (min-device-pixel-ratio: 2),
+                screen and (min-resolution: 192dpi),
+                screen and (min-resolution: 2dppx) {
+                background-image: linear-gradient(
+                    rgba(47, 48, 58, 0.8),
+                    rgba(47, 48, 58, 0.8),
+                  ),
+                  url('../images/hero-background-mobile@2x.jpg');
+                }
+            }
+            // 
+            @media screen and (min-width: 768px) {
+                padding-top: 118px;
+                padding-bottom: 200px;
+                height: 400px;
+            
+                background-image: linear-gradient(0deg,
+                rgba(47, 48, 58, 0.8),
+                rgba(47, 48, 58, 0.8)),
+                url('../images/hero-background-tablet.jpg');
+                background-position: center;
+
+                @media screen and (min-device-pixel-ratio: 2),
+                screen and (min-resolution: 192dpi),
+                screen and (min-resolution: 2dppx) {
+                background-image: linear-gradient(
+                    rgba(47, 48, 58, 0.8),
+                    rgba(47, 48, 58, 0.8),
+                  ),
+                  url('../images/hero-background-tablet@2x.jpg');
+                }
+            }
+            // 
+            @media screen and (min-width: 1200px) {
+                padding-top: 200px;
+                padding-bottom: 200px;
+                height: 600px;
+            
+                background-image: linear-gradient(0deg,
+                rgba(47, 48, 58, 0.8),
+                rgba(47, 48, 58, 0.8)),
+                url('../images/hero-background.jpg');
+                background-position: center;
+
+                @media screen and (min-device-pixel-ratio: 2),
+                screen and (min-resolution: 192dpi),
+                screen and (min-resolution: 2dppx) {
+                background-image: linear-gradient(
+                    rgba(47, 48, 58, 0.8),
+                    rgba(47, 48, 58, 0.8),
+                  ),
+                  url('../images/hero-background@2x.jpg');
+                }
+            }
             .hero__title {
                 @media screen and (max-width:350px) {
                         display: inline;
                 }
-                    @media screen and (max-width: 1200px){
+                    @media screen and (max-width: 1199px){
                         max-width: 360px;
                         font-size: 26px;
                         font-weight: 900;

@@ -1,9 +1,9 @@
     .filter-padding {
-        @media screen and (max-width: 768px) {
-            padding: 40px 0px 60px 0px;
+        @media screen and (max-width: 767px) {
+            padding: 40px 15px 60px 15px;
         }
-        @media screen and (min-width: 768px) and (max-width: 1200px){
-            padding: 40px 0px 60px 0px;
+        @media screen and (min-width: 768px) and (max-width: 1199px){
+            padding: 40px 15px 60px 15px;
         }
         padding-top: 50px;
         padding-bottom: 94px;
@@ -18,11 +18,11 @@
         justify-content: center;
     }
     .market-list {
-        @media screen and (max-width: 768px) {
+        @media screen and (max-width: 767px) {
             width: 450px;
             margin: 0px;
         }
-        @media screen and (min-width: 768px) and (max-width: 1200px){
+        @media screen and (min-width: 768px) and (max-width: 1199px){
             width: 354px;
             margin: 0px;
         }
@@ -35,7 +35,7 @@
         }
     }
     .market-list:not(:last-child) {
-        @media screen and (max-width: 768px) {
+        @media screen and (max-width: 767px) {
             margin-bottom: 30px;
         }
     }
@@ -48,12 +48,12 @@
         }
       }
     .market-list:nth-child(2n) {
-        @media screen and (min-width: 768px) and (max-width: 1200px){
+        @media screen and (min-width: 768px) and (max-width: 1199px){
             margin-left: 30px;
         }
       }
     .market-list:not(:last-child) {
-        @media screen and (min-width: 768px) and (max-width: 1200px){
+        @media screen and (min-width: 768px) and (max-width: 1199px){
             margin-bottom: 30px;
         }
     }
@@ -74,17 +74,11 @@
         overflow: hidden;
     }
     .market__tehnoqack img {
-        @media screen and (max-width: 768px) {
-            width: 450px;
-            height: 320px;
-            object-fit: cover;
-            object-position: top;
+        @media screen and (max-width: 767px) {
+
         }
-        @media screen and (min-width: 768px) and (max-width: 1200px) {
-            width: 354px;
-            height: 260px;
-            object-fit: cover;
-            object-position: top;
+        @media screen and (min-width: 768px) and (max-width: 1199px) {
+
         }
     }
     .market__info {

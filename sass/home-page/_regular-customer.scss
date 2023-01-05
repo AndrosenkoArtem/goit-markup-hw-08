@@ -1,27 +1,27 @@
     .margin-recrut {
-        @media screen and (max-width: 768px) {
+        @media screen and (max-width: 767px) {
             padding: 60px 0px;
         }
-        @media screen and (min-width: 768px) and (max-width: 1200px){
+        @media screen and (min-width: 768px) and (max-width: 1199px){
             padding: 60px 0px;
         }
         padding-top: 94px;
         padding-bottom: 94px;
     }
     .margin-recrut .header {
-        @media screen and (max-width: 768px) {
+        @media screen and (max-width: 767px) {
             margin-bottom: 30px;
         }
-        @media screen and (min-width: 768px) and (max-width: 1200px){
+        @media screen and (min-width: 768px) and (max-width: 1199px){
             margin-bottom: 30px;
         }
     }
     .regular-icon {
-        @media screen and (max-width: 768px) {
+        @media screen and (max-width: 767px) {
             flex-wrap: wrap;
             justify-content: center;
         }
-        @media screen and (min-width: 768px) and (max-width: 1200px){
+        @media screen and (min-width: 768px) and (max-width: 1199px){
             flex-wrap: wrap;
             justify-content: center;
         }
@@ -29,12 +29,12 @@
         justify-content: space-between;
     }
     .regular__img:not(:nth-child(3n)) {
-        @media screen and (min-width: 768px) and (max-width: 1200px){
+        @media screen and (min-width: 768px) and (max-width: 1199px){
             margin-right: 30px;
         }
     }
     .regular__img:nth-child(6n-3) {
-        @media screen and (min-width: 768px) and (max-width: 1200px){
+        @media screen and (min-width: 768px) and (max-width: 1199px){
             margin-bottom: 30px;
         }
     }
@@ -50,7 +50,7 @@
     }
     .regular__img:nth-child(2n-2) {
 
-        @media screen and (max-width: 768px) {
+        @media screen and (max-width: 767px) {
             margin-left: 30px;
         }
         @media screen and (min-width:350px) and (max-width: 450px) {
@@ -61,7 +61,7 @@
         }
     }
     .regular__img:nth-child(3n-2) {
-        @media screen and (max-width: 768px) {
+        @media screen and (max-width: 767px) {
             margin-bottom: 30px;
         }
         @media screen and (max-width: 450px) {
@@ -74,10 +74,10 @@
     }
 
     .regular__div {
-        @media screen and (max-width: 768px) {
+        @media screen and (max-width: 767px) {
             width: 210px;
         }
-        @media screen and (min-width: 768px) and (max-width: 1200px){
+        @media screen and (min-width: 768px) and (max-width: 1199px){
             width: 226px;
         }
         @media screen and (max-width: 450px) {

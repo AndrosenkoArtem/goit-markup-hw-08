@@ -3,20 +3,20 @@
         padding-bottom: 94px;
     }
     .activity {
-        @media screen and (max-width: 768px) {
+        @media screen and (max-width: 767px) {
             display: none;
         }
-        @media screen and (min-width: 768px) and (max-width: 1200px){
+        @media screen and (min-width: 768px) and (max-width: 1199px){
             display: none;
         }
         display: flex;
         justify-content: center;
     }
     .margin-text .header {
-        @media screen and (max-width: 768px) {
+        @media screen and (max-width: 767px) {
             display: none;
         }
-        @media screen and (min-width: 768px) and (max-width: 1200px){
+        @media screen and (min-width: 768px) and (max-width: 1199px){
             display: none;
         }
     }

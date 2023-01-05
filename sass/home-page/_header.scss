@@ -1,5 +1,5 @@
     body {
-        @media screen and (max-width: 768px) {
+        @media screen and (max-width: 767px) {
             padding-top: 60px;
         }
     }
@@ -11,7 +11,7 @@
         z-index: 1;
     }
     .header-container {
-        @media screen and (max-width: 768px) {
+        @media screen and (max-width: 767px) {
             padding: 10px 15px;
             justify-content: space-between;
         }
@@ -37,13 +37,12 @@
 
     /* logo */
     .site-nav {
-            border-top: 1px solid rgba(236, 236, 236, 1);
             display: flex;
             margin-left: 85px;
             li:not(:last-child) {
                 margin-right: 50px;
             }
-            @media screen and (max-width: 768px) {
+            @media screen and (max-width: 767px) {
                 padding: 60px 0px;
                 display: block;
                 text-align: center;
@@ -55,7 +54,7 @@
         }
 
         .link {
-            @media screen and (max-width: 768px) {
+            @media screen and (max-width: 767px) {
                 display: inline-block;
                 font-size: 18px;
                 line-height: 1.2;
@@ -76,15 +75,18 @@
         }
             position: relative;
             .link.current {
-                padding-bottom: 8px;
+                @media screen and (max-width: 767px) {
+                    padding-bottom: 8px;
+                }
+                padding-bottom: 31px;
                 position: relative;
-            color: $accent-color;}
+                color: $accent-color;}
     }
     .site-nav__item {
         @media screen and (min-width: 768px) {
             padding: 30px 0px;
         }
-        @media screen and (max-width: 768px) {
+        @media screen and (max-width: 767px) {
             margin-top: 40px;
         }
     }
@@ -99,10 +101,10 @@
             border-radius: 4px;
     }
     .mail-list {
-        @media screen and (min-width: 768px) and (max-width: 1200px){
+        @media screen and (min-width: 768px) and (max-width: 1199px){
         display: block;
         }
-        @media screen and (max-width: 768px) {
+        @media screen and (max-width: 767px) {
             display: block;
             padding-bottom: 60px;
         }
@@ -110,7 +112,7 @@
             margin-left: auto;
     }
     .mail-hover {
-        @media screen and (max-width: 768px) {
+        @media screen and (max-width: 767px) {
             justify-content: center;
             font-size: 18px;
             line-height: 1.2;
@@ -143,7 +145,7 @@
         }
 
     .tel-hover {
-        @media screen and (max-width: 768px) {
+        @media screen and (max-width: 767px) {
             font-size: 18px;
             line-height: 1.2;
             letter-spacing: 0.02em;
@@ -151,7 +153,7 @@
             margin-top: 10px;
             justify-content: center;
         }
-        @media screen and (min-width: 768px) and (max-width: 1200px){
+        @media screen and (min-width: 768px) and (max-width: 1199px){
         margin-left: 0;
         margin-top: 10px;
         }
